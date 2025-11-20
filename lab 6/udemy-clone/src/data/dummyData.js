@@ -1,14 +1,48 @@
-// Dummy data for Udemy landing page
+// Dummy data for Udemy landing page - Lab Assignment
 
-export const categories = [
-  { id: 1, name: "Design", icon: "🎨" },
-  { id: 2, name: "Development", icon: "💻" },
-  { id: 3, name: "Marketing", icon: "📊" },
-  { id: 4, name: "IT and Software", icon: "⚙️" },
-  { id: 5, name: "Personal Development", icon: "🌱" },
-  { id: 6, name: "Business", icon: "💼" },
-  { id: 7, name: "Photography", icon: "📷" },
-  { id: 8, name: "Music", icon: "🎵" }
+// Promotional offer data
+export const promoOffer = {
+  text: "New-learner offer | Courses from E£269.99",
+  countdown: {
+    hours: 5,
+    minutes: 56,
+    seconds: 33
+  }
+};
+
+// Essential skills data
+export const essentialSkills = [
+  { id: 1, name: "Generative AI", icon: "🤖" },
+  { id: 2, name: "IT Certifications", icon: "📜" },
+  { id: 3, name: "Data Science", icon: "📊" },
+  { id: 4, name: "Leadership", icon: "👥" },
+  { id: 5, name: "Cloud Computing", icon: "☁️" },
+  { id: 6, name: "Communication", icon: "💬" }
+];
+
+// AI Career features
+export const aiCareerFeatures = {
+  title: "Reimagine your career in the AI era",
+  features: [
+    { id: 1, text: "Learn AI and more", checked: true },
+    { id: 2, text: "Prep for a certification", checked: false },
+    { id: 3, text: "Practice with AI coaching", checked: false },
+    { id: 4, text: "Advance your career", checked: true }
+  ],
+  pricing: {
+    amount: "E£294.300",
+    period: "month"
+  }
+};
+
+// Course categories for filtering
+export const courseCategories = [
+  "Artificial Intelligence (AI)",
+  "Python",
+  "Microsoft Excel",
+  "AI Agents & Agentic AI",
+  "Digital Marketing",
+  "Amazon AWS"
 ];
 
 export const featuredCourses = [
@@ -102,12 +136,15 @@ export const featuredCourses = [
   }
 ];
 
+// Trusted companies as shown in PDF
 export const trustedCompanies = [
-  { id: 1, name: "Nasdaq", logo: "NASDAQ" },
-  { id: 2, name: "Volkswagen", logo: "VW" },
+  { id: 1, name: "Cisco", logo: "cisco" },
+  { id: 2, name: "Vimeo", logo: "vimeo" },
   { id: 3, name: "Box", logo: "BOX" },
-  { id: 4, name: "NetApp", logo: "NetApp" },
-  { id: 5, name: "Eventbrite", logo: "eventbrite" }
+  { id: 4, name: "Volvo", logo: "VOLVO" },
+  { id: 5, name: "Netflix", logo: "NETFLIX" },
+  { id: 6, name: "Eventbrite", logo: "eventbrite" },
+  { id: 7, name: "Beretta", logo: "Beretta" }
 ];
 
 export const navigationLinks = [
@@ -115,4 +152,104 @@ export const navigationLinks = [
   { id: 2, name: "Search for anything", isSearch: true },
   { id: 3, name: "Teach on Udemy", isLink: true },
   { id: 4, name: "My Learning", isLink: true }
+];
+
+// Courses data matching PDF structure
+export const courses = [
+  {
+    id: 1,
+    title: "ChatGPT Complete Guide: Learn Midjourney, ChatGPT 4 & More",
+    instructor: "Julian Melanson, Benza Maman",
+    rating: 4.5,
+    numRatings: 84304,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Artificial Intelligence (AI)",
+    isBestseller: true,
+    thumbnail: "/ai-course.jpg"
+  },
+  {
+    id: 2,
+    title: "Python for Data Science and Machine Learning Bootcamp",
+    instructor: "Jose Portilla",
+    rating: 4.6,
+    numRatings: 153478,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Python",
+    isBestseller: true,
+    thumbnail: "/python-ds.jpg"
+  },
+  {
+    id: 3,
+    title: "Microsoft Excel - Excel from Beginner to Advanced",
+    instructor: "Kyle Pew",
+    rating: 4.7,
+    numRatings: 256891,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Microsoft Excel",
+    isBestseller: true,
+    thumbnail: "/excel.jpg"
+  },
+  {
+    id: 4,
+    title: "Complete AI Agent Development Course: Build & Deploy AI Agents",
+    instructor: "Dr. Ryan Ahmed",
+    rating: 4.8,
+    numRatings: 12459,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "AI Agents & Agentic AI",
+    isBestseller: false,
+    thumbnail: "/ai-agents.jpg"
+  },
+  {
+    id: 5,
+    title: "The Complete Digital Marketing Course - 12 Courses in 1",
+    instructor: "Rob Percival",
+    rating: 4.5,
+    numRatings: 98234,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Digital Marketing",
+    isBestseller: true,
+    thumbnail: "/digital-marketing.jpg"
+  },
+  {
+    id: 6,
+    title: "Ultimate AWS Certified Solutions Architect Associate SAA-C03",
+    instructor: "Stephane Maarek",
+    rating: 4.7,
+    numRatings: 187923,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Amazon AWS",
+    isBestseller: true,
+    thumbnail: "/aws.jpg"
+  },
+  {
+    id: 7,
+    title: "Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2024]",
+    instructor: "Kirill Eremenko, Hadelin de Ponteves",
+    rating: 4.5,
+    numRatings: 165432,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Artificial Intelligence (AI)",
+    isBestseller: false,
+    thumbnail: "/ml-az.jpg"
+  },
+  {
+    id: 8,
+    title: "100 Days of Code: The Complete Python Pro Bootcamp",
+    instructor: "Dr. Angela Yu",
+    rating: 4.7,
+    numRatings: 298567,
+    price: 269.99,
+    originalPrice: 3499.99,
+    category: "Python",
+    isBestseller: true,
+    thumbnail: "/python-100.jpg"
+  }
 ];

@@ -1,15 +1,19 @@
 import Hero from './components/Hero';
-import Categories from './components/Categories';
-import FeaturedCourses from './components/FeaturedCourses';
+import EssentialSkills from './components/EssentialSkills';
+import AICareer from './components/AICareer';
+import CourseGrid from './components/CourseGrid';
 import TrustedCompanies from './components/TrustedCompanies';
+import Footer from './components/Footer';
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <Categories />
-      <FeaturedCourses />
+      <EssentialSkills />
+      <AICareer />
+      <CourseGrid />
       <TrustedCompanies />
+      <Footer />
     </>
   );
 };

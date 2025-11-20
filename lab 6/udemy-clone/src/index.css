@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  --primary: #a435f0;
+  --dark: #1c1d1f;
+  --light-text: #6a6f73;
+  --yellow: #b4690e;
+  --bg-1: #f7f9fa;
+  --bg-2: #f6f9fb;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --card-shadow: 0 2px 4px rgba(0,0,0,0.08);
+
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #1c1d1f;
+  color: var(--dark);
   background-color: #ffffff;
 
   font-synthesis: none;
@@ -34,6 +45,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: white;
+  color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6 {

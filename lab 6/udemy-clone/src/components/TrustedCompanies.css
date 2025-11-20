@@ -10,11 +10,12 @@
 }
 
 .trusted-companies-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #1c1d1f;
   margin-bottom: 3rem;
   text-align: center;
+  line-height: 1.4;
 }
 
 .companies-logos {

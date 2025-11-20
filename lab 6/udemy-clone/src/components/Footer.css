@@ -1,0 +1,9 @@
+.site-footer{ background:var(--bg-1); padding:32px 1rem; color:var(--dark); }
+.site-footer .container{ max-width:1400px; margin:0 auto; }
+.cols{ display:flex; gap:24px; flex-wrap:wrap; }
+.col{ flex:1 1 180px; }
+.col h4{ margin-bottom:8px; }
+.col ul{ list-style:none; padding:0; color:var(--light-text); }
+.col li{ margin-bottom:8px; }
+.copyright{ margin-top:24px; color:var(--light-text); }
+.site-footer select{ padding:8px; border-radius:6px; border:1px solid #ddd; }

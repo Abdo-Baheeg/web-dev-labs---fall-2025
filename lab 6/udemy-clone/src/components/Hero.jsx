@@ -5,8 +5,9 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Learn on your schedule</h1>
-          <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+          <h1>Jump into learning for less</h1>
+          <p>Whether you're switching careers or sharpening your skills, now's the time to learn something new.</p>
+          <button className="cta-button">Sign up now</button>
         </div>
       </div>
     </section>

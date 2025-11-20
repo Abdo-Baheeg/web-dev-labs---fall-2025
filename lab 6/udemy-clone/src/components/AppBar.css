@@ -26,56 +26,53 @@
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #a435f0;
+  height: 32px;
   cursor: pointer;
-  font-family: 'Suisse Works', Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: -0.5px;
+  display: block;
 }
 
-.categories-btn {
+.categories-btn, .nav-btn {
   padding: 0.5rem 1rem;
   background-color: white;
-  border: 1px solid #1c1d1f;
+  border: none;
   border-radius: 0;
   font-size: 0.875rem;
   font-weight: 500;
   color: #1c1d1f;
   cursor: pointer;
   white-space: nowrap;
+  transition: all 0.2s ease;
 }
 
-.categories-btn:hover {
+.categories-btn:hover, .nav-btn:hover {
   background-color: #f7f9fa;
+  color: var(--primary);
 }
 
 .search-bar {
   flex: 1;
-  max-width: 550px;
+  max-width: 700px;
   position: relative;
 }
 
 .search-bar input {
   width: 100%;
-  padding: 0.75rem 3rem 0.75rem 3rem;
+  padding: 0.875rem 1.5rem;
   border: 1px solid #1c1d1f;
   border-radius: 50px;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   outline: none;
+  transition: all 0.2s ease;
 }
 
 .search-bar input:focus {
-  border-color: #a435f0;
-  box-shadow: 0 0 0 2px #c0c4fc;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(164,53,240,0.08);
 }
 
-.search-icon {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+.search-bar input::placeholder {
   color: #6a6f73;
+  font-weight: 400;
 }
 
 .app-bar-right {
@@ -94,7 +91,7 @@
 }
 
 .nav-link:hover {
-  color: #a435f0;
+  color: var(--primary);
 }
 
 .cart-btn, .language-btn {
@@ -116,18 +113,19 @@
 }
 
 .btn-login, .btn-signup {
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.25rem;
   border: 1px solid #1c1d1f;
   border-radius: 0;
   font-size: 0.875rem;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+  transition: all 0.2s ease;
 }
 
 .btn-login {
   background-color: white;
-  color: #1c1d1f;
+  color: var(--dark);
 }
 
 .btn-login:hover {
@@ -135,10 +133,13 @@
 }
 
 .btn-signup {
-  background-color: #1c1d1f;
+  background-color: var(--primary);
   color: white;
+  border-color: var(--primary);
 }
 
 .btn-signup:hover {
-  background-color: #0f0f10;
+  background-color: #8a2fd6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(164,53,240,0.3);
 }
