@@ -1,0 +1,144 @@
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #d1d7dc;
+  padding: 0.75rem 1.5rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.app-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a435f0;
+  cursor: pointer;
+  font-family: 'Suisse Works', Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: -0.5px;
+}
+
+.categories-btn {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #1c1d1f;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1c1d1f;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.categories-btn:hover {
+  background-color: #f7f9fa;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 550px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 3rem 0.75rem 3rem;
+  border: 1px solid #1c1d1f;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #a435f0;
+  box-shadow: 0 0 0 2px #c0c4fc;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6a6f73;
+}
+
+.app-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  padding: 0.5rem 0.75rem;
+  color: #1c1d1f;
+  text-decoration: none;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #a435f0;
+}
+
+.cart-btn, .language-btn {
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #1c1d1f;
+  border-radius: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-btn:hover, .language-btn:hover {
+  background-color: #f7f9fa;
+}
+
+.btn-login, .btn-signup {
+  padding: 0.5rem 1rem;
+  border: 1px solid #1c1d1f;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-login {
+  background-color: white;
+  color: #1c1d1f;
+}
+
+.btn-login:hover {
+  background-color: #f7f9fa;
+}
+
+.btn-signup {
+  background-color: #1c1d1f;
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: #0f0f10;
+}
