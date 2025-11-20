@@ -10,7 +10,6 @@ const HomePage = () => {
     <>
       <Hero />
       <EssentialSkills />
-      <AICareer />
       <CourseGrid />
       <TrustedCompanies />
       <Footer />
