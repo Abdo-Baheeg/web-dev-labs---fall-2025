@@ -13,8 +13,8 @@ app.get('/health', (req, res) => {
   res.end();
 });
 
-// assign port 5050
-const PORT = 5050;
+// assign port 3000
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
